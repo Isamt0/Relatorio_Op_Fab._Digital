@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 Soldagem | Relatório - Opt. Fabricação Digital</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 Soldagem | Relatório - Opt. Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 Soldagem | Relatório - Opt. Fabricação Digital" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Isaias Da Costa Castro" />
+
+
+<meta name="date" content="2024-07-13" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="impressão-3d.html"/>
+<link rel="next" href="circuito-impresso.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Resumo</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#teoria"><i class="fa fa-check"></i><b>1.1</b> teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="maquinas-cnc---computer-numeric-control.html"><a href="maquinas-cnc---computer-numeric-control.html"><i class="fa fa-check"></i><b>2</b> Maquinas CNC - <em>Computer Numeric Control</em></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="maquinas-cnc---computer-numeric-control.html"><a href="maquinas-cnc---computer-numeric-control.html#teoria-1"><i class="fa fa-check"></i><b>2.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="desenho-2d.html"><a href="desenho-2d.html"><i class="fa fa-check"></i><b>3</b> Desenho 2D</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="desenho-2d.html"><a href="desenho-2d.html#teoria-2"><i class="fa fa-check"></i><b>3.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="corte-a-laser.html"><a href="corte-a-laser.html"><i class="fa fa-check"></i><b>4</b> Corte a laser</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="corte-a-laser.html"><a href="corte-a-laser.html#teoria-3"><i class="fa fa-check"></i><b>4.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>5</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="soldagem.html"><a href="soldagem.html#teoria-4"><i class="fa fa-check"></i><b>5.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="impressão-3d.html"><a href="impressão-3d.html"><i class="fa fa-check"></i><b>6</b> Impressão 3D</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="impressão-3d.html"><a href="impressão-3d.html#teoria-5"><i class="fa fa-check"></i><b>6.1</b> Teoria</a></li>
+<li class="chapter" data-level="6.2" data-path="impressão-3d.html"><a href="impressão-3d.html#prática"><i class="fa fa-check"></i><b>6.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="soldagem-1.html"><a href="soldagem-1.html"><i class="fa fa-check"></i><b>7</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="soldagem-1.html"><a href="soldagem-1.html#teoria-6"><i class="fa fa-check"></i><b>7.1</b> Teoria</a></li>
+<li class="chapter" data-level="7.2" data-path="soldagem-1.html"><a href="soldagem-1.html#prática-1"><i class="fa fa-check"></i><b>7.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="circuito-impresso.html"><a href="circuito-impresso.html"><i class="fa fa-check"></i><b>8</b> Circuito Impresso</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="circuito-impresso.html"><a href="circuito-impresso.html#teoria-7"><i class="fa fa-check"></i><b>8.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="programação.html"><a href="programação.html"><i class="fa fa-check"></i><b>9</b> Programação</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="programação.html"><a href="programação.html#teoria-8"><i class="fa fa-check"></i><b>9.1</b> Teoria</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Relatório - Opt. Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="soldagem-1" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Soldagem<a href="soldagem-1.html#soldagem-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="teoria-6" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Teoria<a href="soldagem-1.html#teoria-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="prática-1" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Prática<a href="soldagem-1.html#prática-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="impressão-3d.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="circuito-impresso.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/06-soldagem.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Relatório Opt. Fabricação Digital - Isaias Castro.pdf", "Relatório Opt. Fabricação Digital - Isaias Castro.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

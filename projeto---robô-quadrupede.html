@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 12 Projeto - Robô Quadrupede | Relatório - Opt. Fabricação Digital</title>
+  <meta name="description" content="Chapter 12 Projeto - Robô Quadrupede | Relatório - Opt. Fabricação Digital" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 12 Projeto - Robô Quadrupede | Relatório - Opt. Fabricação Digital" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 12 Projeto - Robô Quadrupede | Relatório - Opt. Fabricação Digital" />
+  
+  
+  
+
+<meta name="author" content="Isaias Da Costa Castro" />
+
+
+<meta name="date" content="2024-07-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="programação.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Fabricação Digital</a></li>
+<li class="chapter" data-level="2" data-path="maquinas-cnc---computer-numeric-control.html"><a href="maquinas-cnc---computer-numeric-control.html"><i class="fa fa-check"></i><b>2</b> Maquinas CNC - <em>Computer Numeric Control</em></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="maquinas-cnc---computer-numeric-control.html"><a href="maquinas-cnc---computer-numeric-control.html#teoria"><i class="fa fa-check"></i><b>2.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="desenho-2d.html"><a href="desenho-2d.html"><i class="fa fa-check"></i><b>3</b> Desenho 2D</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="desenho-2d.html"><a href="desenho-2d.html#teoria-1"><i class="fa fa-check"></i><b>3.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="corte-a-laser.html"><a href="corte-a-laser.html"><i class="fa fa-check"></i><b>4</b> Corte a laser</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="corte-a-laser.html"><a href="corte-a-laser.html#teoria-2"><i class="fa fa-check"></i><b>4.1</b> Teoria</a></li>
+<li class="chapter" data-level="4.2" data-path="corte-a-laser.html"><a href="corte-a-laser.html#prática"><i class="fa fa-check"></i><b>4.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="plotter.html"><a href="plotter.html"><i class="fa fa-check"></i><b>5</b> Plotter</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="plotter.html"><a href="plotter.html#teoria-3"><i class="fa fa-check"></i><b>5.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="desenho-3d.html"><a href="desenho-3d.html"><i class="fa fa-check"></i><b>6</b> Desenho 3D</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="desenho-3d.html"><a href="desenho-3d.html#teoria-4"><i class="fa fa-check"></i><b>6.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="impressão-3d.html"><a href="impressão-3d.html"><i class="fa fa-check"></i><b>7</b> Impressão 3D</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="impressão-3d.html"><a href="impressão-3d.html#teoria-5"><i class="fa fa-check"></i><b>7.1</b> Teoria</a></li>
+<li class="chapter" data-level="7.2" data-path="impressão-3d.html"><a href="impressão-3d.html#prática-1"><i class="fa fa-check"></i><b>7.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="fresadora.html"><a href="fresadora.html"><i class="fa fa-check"></i><b>8</b> Fresadora</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="fresadora.html"><a href="fresadora.html#teoria-6"><i class="fa fa-check"></i><b>8.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="soldagem.html"><a href="soldagem.html"><i class="fa fa-check"></i><b>9</b> Soldagem</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="soldagem.html"><a href="soldagem.html#teoria-7"><i class="fa fa-check"></i><b>9.1</b> Teoria</a></li>
+<li class="chapter" data-level="9.2" data-path="soldagem.html"><a href="soldagem.html#prática-2"><i class="fa fa-check"></i><b>9.2</b> Prática</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="circuito-impresso.html"><a href="circuito-impresso.html"><i class="fa fa-check"></i><b>10</b> Circuito Impresso</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="circuito-impresso.html"><a href="circuito-impresso.html#teoria-8"><i class="fa fa-check"></i><b>10.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="programação.html"><a href="programação.html"><i class="fa fa-check"></i><b>11</b> Programação</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="programação.html"><a href="programação.html#teoria-9"><i class="fa fa-check"></i><b>11.1</b> Teoria</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html"><i class="fa fa-check"></i><b>12</b> Projeto - Robô Quadrupede</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#objetivo"><i class="fa fa-check"></i><b>12.1</b> Objetivo</a></li>
+<li class="chapter" data-level="12.2" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#materiais"><i class="fa fa-check"></i><b>12.2</b> Materiais</a></li>
+<li class="chapter" data-level="12.3" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#impressão-3d-1"><i class="fa fa-check"></i><b>12.3</b> Impressão 3D</a></li>
+<li class="chapter" data-level="12.4" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#corte-a-laser-1"><i class="fa fa-check"></i><b>12.4</b> Corte a laser</a></li>
+<li class="chapter" data-level="12.5" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#arduino"><i class="fa fa-check"></i><b>12.5</b> Arduino</a></li>
+<li class="chapter" data-level="12.6" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#programação-1"><i class="fa fa-check"></i><b>12.6</b> Programação</a></li>
+<li class="chapter" data-level="12.7" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#montagem"><i class="fa fa-check"></i><b>12.7</b> Montagem</a></li>
+<li class="chapter" data-level="12.8" data-path="projeto---robô-quadrupede.html"><a href="projeto---robô-quadrupede.html#discussões-e-resultados"><i class="fa fa-check"></i><b>12.8</b> Discussões e resultados</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Relatório - Opt. Fabricação Digital</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="projeto---robô-quadrupede" class="section level1 hasAnchor" number="12">
+<h1><span class="header-section-number">Chapter 12</span> Projeto - Robô Quadrupede<a href="projeto---robô-quadrupede.html#projeto---robô-quadrupede" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="objetivo" class="section level2 hasAnchor" number="12.1">
+<h2><span class="header-section-number">12.1</span> Objetivo<a href="projeto---robô-quadrupede.html#objetivo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Como objetivo de exercitar a teoria para utilização dos equipamentos do laboratório, foi estabelecido o projeto de um robô quadrupede, definido a partir de modelos no site Thingiverse (Figura 6).</p>
+<div class="float">
+<img src="docs/projeto.jpg" width="341" alt="Figura 6 - Modelo de Projeto Quadrupede" />
+<div class="figcaption">Figura 6 - Modelo de Projeto Quadrupede</div>
+</div>
+</div>
+<div id="materiais" class="section level2 hasAnchor" number="12.2">
+<h2><span class="header-section-number">12.2</span> Materiais<a href="projeto---robô-quadrupede.html#materiais" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para a elaboração do projeto foram necessários a obtenção dos seguintes materiais, logo também de materiais para montagem como cola, fita e chaves de fenda.</p>
+<p>• 1x Arduino Uno.</p>
+<p>• 8x micro servos.</p>
+<p>• 30x Cabos Jumper.</p>
+<p>• 1x Mini Protoboard.</p>
+<p>• 1x Módulo Bluetooth.</p>
+<p>• 8x Parafusos rosqueáveis.</p>
+<p>• 8x Porcas.</p>
+<p>• 8x Parafusos.</p>
+<p>• Chapa de MDF 2mm.</p>
+<p>• Bateria 9V.</p>
+<p>• Conector para bateria.</p>
+<p>• Micro chave duas posições.</p>
+</div>
+<div id="impressão-3d-1" class="section level2 hasAnchor" number="12.3">
+<h2><span class="header-section-number">12.3</span> Impressão 3D<a href="projeto---robô-quadrupede.html#impressão-3d-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para a fabricação das peças, foi utilizada a técnica de impressão 3D com PLA (ácido polilático) devido à sua facilidade de uso. O PLA é um termoplástico biodegradável derivado de recursos renováveis e com capacidade de degradar em ácido lático. A impressora 3D do laboratório dispõe de tecnologia de Fused Deposition Modeling (FDM). Quanto ao processo de impressão, foi iniciado com a criação de um modelo tridimensional fornecido pelo site Thingiverse utilizando o software Auto CAD. Após os ajustes do modelo digital, foi então importado para um software de fatiamento o Cura.   Este software realiza o fatiamento, que é dividir o modelo em camadas finas, e gerar um arquivo G-code contendo todas as instruções necessárias para a impressora 3D. Foi realizada a configuração da impressora, incluindo o nivelamento da cama de construção. Este ajuste manual garante que a primeira camada de impressão adere corretamente à superfície, evitando falhas na impressão subsequente.</p>
+<div class="float">
+<img src="docs/docs/impressao3d.jpg" width="385" alt="Figura 7 - Impressão 3D." />
+<div class="figcaption">Figura 7 - Impressão 3D.</div>
+</div>
+<p>Após todo o processo descrito acima, foi carregado o filamento PLA inserido na extrusora da impressora. A cabeça de impressão e a cama de construção são então aquecidas às temperaturas apropriadas entre 180-220°C para a cabeça de impressão e cerca de 60°C para a cama, preparadas para o início do processo de impressão. Com o arquivo G-code carregado, a impressão é iniciada, a cabeça de impressão se movimenta de acordo com as instruções, depositando o filamento derretido camada por camada até que o objeto esteja completo.</p>
+<div class="float">
+<img src="docs/docs/impressao3d2.jpg" width="391" alt="Figura 8 - Impressora 3D." />
+<div class="figcaption">Figura 8 - Impressora 3D.</div>
+</div>
+</div>
+<div id="corte-a-laser-1" class="section level2 hasAnchor" number="12.4">
+<h2><span class="header-section-number">12.4</span> Corte a laser<a href="projeto---robô-quadrupede.html#corte-a-laser-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Através do modelo em 3D, fornecido pelo site Thingiverse, foi necessário fazer a conversão com auxílio do Sketchup e do AutoCAD, e após isso utilizar o software Inkscape para gerar uma imagem vetorizada, em formato SVG, na cor vermelha para efeito de corte pela máquina laser. Na Figura 9 temos as primeiras patas e estrutura para cortes.</p>
+<div class="float">
+<img src="docs/desenho_pecas.JPG" alt="Figura 9 - Primeiras peças de suporte e patas" />
+<div class="figcaption">Figura 9 - Primeiras peças de suporte e patas</div>
+</div>
+<div class="float">
+<img src="docs/cortelaser.jpg" width="347" alt="Figura 10 - Peças após corte" />
+<div class="figcaption">Figura 10 - Peças após corte</div>
+</div>
+<p>Porém como se mostraram frágeis foram editadas posteriormente e novamente cortadas, como demostrado na Figura 11, e juntamente com elas um caixa para adicionar a bateria e um suporte para o Arduino uno.</p>
+<div class="float">
+<img src="docs/desenho_pecas2.JPG" alt="Figura 11 - Peças editadas e suporte para bateria e arduino" />
+<div class="figcaption">Figura 11 - Peças editadas e suporte para bateria e arduino</div>
+</div>
+<div class="float">
+<img src="docs/pecaslaser.jpg" width="387" alt="Figura 12 - Corte das peças novas" />
+<div class="figcaption">Figura 12 - Corte das peças novas</div>
+</div>
+</div>
+<div id="arduino" class="section level2 hasAnchor" number="12.5">
+<h2><span class="header-section-number">12.5</span> Arduino<a href="projeto---robô-quadrupede.html#arduino" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Adotou-se o Arduino Uno por ser uma plataforma de prototipagem eletrônica de código aberto, amplamente utilizada por entusiastas, estudantes e profissionais devido à sua simplicidade e versatilidade. Equipado com um microcontrolador ATmega328P, ele oferece uma variedade de pinos de entrada e saída que permitem a conexão de sensores, atuadores e outros componentes eletrônicos. A facilidade de uso do Arduino Uno é destacada por sua programação simplificada através do ambiente de desenvolvimento integrado (IDE), que facilita a escrita, edição e upload de códigos. Além disso, a vasta documentação e a ativa comunidade de usuários fornecem suporte abrangente, tornando-o uma excelente escolha tanto para iniciantes quanto para projetos mais complexos.</p>
+</div>
+<div id="programação-1" class="section level2 hasAnchor" number="12.6">
+<h2><span class="header-section-number">12.6</span> Programação<a href="projeto---robô-quadrupede.html#programação-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Para o movimento dos membros foi necessária uma pesquisa sobre o funcionamento dos servos e suas bibliotecas de controle, no caso como trata-se de micro servos contínuos, sua operação é determinada pelo tempo de execução e sua velocidade operada pelo comando “servo_x.write(n)”, onde “n” representa a velocidade máxima em uma direção quando 0, velocidade máxima na direção oposta quando 180, e servo parado quando em 90. Quanto mais próximo do valor de rotação mais rápido o servo gira, ou quanto mais distante, mais lento.</p>
+<p>Nas Figuras 13, 14 e 15 temos o exemplo do código de teste dos micros servos 9g para movimento das patas em cada período de tempo, inicia-se com a pata movendo a um curto período juntamente com o membro superior, chamado de joelho, após a pata parar de se mover, o joelho para e a retornam ao lugar de origem. O código de repete para cada um dos quatro membros.</p>
+<div class="float">
+<img src="docs/cod1.png" width="328" alt="Figura 13 - Funções de comando arduino" />
+<div class="figcaption">Figura 13 - Funções de comando arduino</div>
+</div>
+<div class="float">
+<img src="docs/cod2.png" width="439" alt="Figura 14 - Funções de comando arduino com variáveis" />
+<div class="figcaption">Figura 14 - Funções de comando arduino com variáveis</div>
+</div>
+<div class="float">
+<img src="docs/cod3.png" width="222" alt="Figura 15 - Regras de movimento para as patas e joelhos" />
+<div class="figcaption">Figura 15 - Regras de movimento para as patas e joelhos</div>
+</div>
+</div>
+<div id="montagem" class="section level2 hasAnchor" number="12.7">
+<h2><span class="header-section-number">12.7</span> Montagem<a href="projeto---robô-quadrupede.html#montagem" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A montagem foi realizada de forma simples e intuitiva, seguindo as orientações descritas no site. Os botões do micro servo motor foram inseridos na cavidade do ombro oposto ao eixo de engrenagem do servo, funcionando como rolamentos para a parte traseira do servo durante o movimento. A junção das duas peças do ombro foi fixada com dois parafusos e porcas de 3 mm x 6 mm, posicionados diagonalmente em direções opostas.</p>
+<div class="float">
+<img src="docs/docs/Etapa%20de%20testes%20do%20projeto..jpg" width="397" alt="Figura 16 - Etapa de testes do projeto." />
+<div class="figcaption">Figura 16 - Etapa de testes do projeto.</div>
+</div>
+<p>Foi utilizado cola instantânea para a fixação das peças, como a haste que representa a pata do quadrupede e a caixa que acopla a bateria. O Arduino foi fixado acima do acoplamento da bateria com um tipo de fita dupla face, foi escolhido esse tipo de fita, pois se houver necessidade de algum reparo, ela desprende com facilidade. Utilizamos também, um protoboard para a organização das conexões com os cabos jumper.</p>
+<div class="float">
+<img src="docs/docs/Projeto%20montado..jpg" width="412" alt="Figura 17 - Projeto Montado." />
+<div class="figcaption">Figura 17 - Projeto Montado.</div>
+</div>
+<div class="float">
+<img src="docs/docs/Projeto%20pronto..jpg" width="412" alt="Figura 18 - Projeto pronto." />
+<div class="figcaption">Figura 18 - Projeto pronto.</div>
+</div>
+</div>
+<div id="discussões-e-resultados" class="section level2 hasAnchor" number="12.8">
+<h2><span class="header-section-number">12.8</span> Discussões e resultados<a href="projeto---robô-quadrupede.html#discussões-e-resultados" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A fragilidade da estrutura pode ser atribuída a uma escolha inadequada de materiais ou a um design que não levou em consideração as forças e tensões envolvidas nas movimentações do robô. Para melhorar a robustez, seria recomendado uma revisão do design estrutural, possivelmente utilizando reforços adicionais ou optando por materiais com melhor resistência mecânica.</p>
+<p>O mau funcionamento do módulo Bluetooth pode ter diversas causas, desde problemas de hardware até falhas na programação. Uma análise mais detalhada dos componentes utilizados, bem como testes de comunicação independentes, poderia ajudar a identificar a causa raiz do problema. Alternativamente, a substituição do módulo Bluetooth por outro modelo ou por uma solução de comunicação diferente, como Wi-Fi, poderia ser considerada.</p>
+<p>Os problemas com as impressões 3D iniciais indicam a necessidade de ajustes nas configurações da impressora 3D, como temperatura, velocidade de impressão e qualidade do filamento.</p>
+<p>Embora o projeto tenha enfrentado desafios significativos, cada problema identificado oferece uma oportunidade de aprendizado e melhoria. A revisão e aprimoramento dos aspectos mencionados poderão contribuir para o desenvolvimento de uma versão mais robusta e funcional do robô quadrúpede. Observou-se como a montagem e construção de um simples projeto pode ser trabalhosa, e como o planejamento e a experiência na execução das atividades se tornam essenciais para um melhor resultado.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="programação.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/11-projeto.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Relatório Opt. Fabricação Digital - Isaias Castro.pdf", "Relatório Opt. Fabricação Digital - Isaias Castro.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
